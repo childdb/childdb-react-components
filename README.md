@@ -7,6 +7,7 @@ To use in React project:
 2. Import components with ```import Component from 'childdb-react-components'```
 
 To work on components:
+0. Must have node >= 6.11.5 installed.
 1. ```$ git clone https://github.com/childdb/childdb-react-components```
 2. ```$ cd childdb-react-components```
 3. ```$ npm install```

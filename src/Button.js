@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Button.css';
+import styles from './Button.css';
 
 export const TYPES = {
   PRIMARY: 'primary',
@@ -14,18 +14,20 @@ export const SIZES = {
 
 class Button extends Component {
   render() {
-    <button
-      type={this.props.type || 'button'},
-      disabled={this.props.disabled},
-      onClick={this.props.onClick},
-      classnames=(
-        styles.button,
-        styles[this.props.buttonType || TYPES.PRIMARY],
-        styles[this.props.buttonSize || SIZES.MEDIUM]
-      )
-    >
-      {this.props.text}
-    </button>
+    return (
+      <button
+        type={ this.props.type || 'button' }
+        disabled={this.props.disabled}
+        onClick={this.props.onClick}
+        className={
+          styles.button,
+          styles[ this.props.buttonType || TYPES.PRIMARY ],
+          styles[ this.props.buttonSize || SIZES.MEDIUM ]
+        }
+      >
+        {this.props.text}
+      </button>
+    )
   }
 }
 
