@@ -16,3 +16,10 @@ This will install all necessary development dependencies.
 
 To view the demo, after the above steps, run ```npm start``` and navigate to ```localhost:3001``` in your web browser.
 
+
+
+## Alternative: Using Docker
+1. ```docker-compose build```
+2. ```docker-compose up```
+3. Navigate to ```localhost:3001``` in your web browser.
+
